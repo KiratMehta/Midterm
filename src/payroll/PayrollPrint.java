@@ -22,7 +22,7 @@ Payroll ac[]=new Payroll[5];
   
 Scanner sc=new Scanner(System.in);
 ArrayList<Payroll> list=new ArrayList();
-for(int i=0;i<1;i++){
+for(int i=0;i<5;i++){
   
 System.out.println("Please enter the employee name: ");
     System.out.println("Enter name");
