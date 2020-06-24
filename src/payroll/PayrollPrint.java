@@ -21,25 +21,30 @@ Payroll ac[]=new Payroll[5];
  //and store in array then print 5 employee details
   
 Scanner sc=new Scanner(System.in);
-
-System.out.println("Please enter the employee name:");
+ArrayList<Payroll> list=new ArrayList();
+for(int i=0;i<1;i++){
+  
+System.out.println("Please enter the employee name: ");
     System.out.println("Enter name");
     String name=sc.next();
-   
-
-
-System.out.println("Please enter the salary: salary <=3000");
+ 
+System.out.println("Please enter the salary: salary <=3000: ");
 double sal=sc.nextDouble();
-     
+
+Payroll pay=new Payroll(sal,name);
+
+
+ list.add(pay);
+}
+
 System.out.println("The final Salary including bonus is: ");         
 
- Payroll pay=new Payroll(sal,name);
- 
- ArrayList<Payroll> list=new ArrayList();
- 
- list.add(pay);
+
+
+
+   
     System.out.println(list);
- 
+
  
 }
 

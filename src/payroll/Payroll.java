@@ -28,7 +28,7 @@ public class Payroll
         }
    public double calculateB(){
        if(Salary<=3000){
-           bonus=15;
+           bonus=Salary*(10/100);
        }
        return bonus;
    }
@@ -75,7 +75,7 @@ public class Payroll
     }
       
     public String toString(){
-        return " "+Salary+" name"+emp+" "+bonus;
+        return "Salary: "+Salary+" name: "+emp+" bonus: "+calculateB();
     }
      
     
